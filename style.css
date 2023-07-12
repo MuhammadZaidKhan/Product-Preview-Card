@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500&display=swap');
+body {
+    background-color: hsl(30, 38%, 92%)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    height: 380px;
+    width: 550px;
+    border: 5px white solid;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.image{
+    width: 50%;
+}
+
+.image img {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+.content{
+    width : 50%;
+    flex: 1;
+    padding-left: 30px;
+    position: relative;
+    box-shadow: none;
+}
+
+.name{
+    position: static;
+    padding-bottom: 75px;
+    /* padding-top: 0px; */
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1.75rem;
+}
+
+.heading{
+     margin-bottom: 4rem;
+      margin-top: -35%;
+      font-family: [Fraunces];
+      font-weight: 700;
+      line-height: 1;
+}
+
+.para{
+    margin-top: -45px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 400;
+}
+
+.price{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30px;
+    font: bold;
+    color: hsl(158, 36%, 37%);
+}
+
+.price2{
+    text-decoration: line-through;
+    right: 20px;
+    padding-left: 50%;
+    margin-top: -25px;
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+}
+
+.btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 60px;
+        background-color: hsl(158, 36%, 37%);
+        color: white;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-weight: 700;
+        font-family:"Montserrat";
+        margin-top: 10px;
+        border: 0;
+        cursor: pointer;
+}
+
+.btn svg {
+    margin-right: 10px; 
+  }
+
+  .btn:hover{
+    background-color: hsl(151, 94%, 7%)
+  }
+
+
+
+@media (max-width: 575px) {
+
+    .div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 480px;
+        width: 300px;
+        border: 5px white solid;
+        border-radius: 10px;
+        background-color: white;
+        /* margin-bottom: 1rem; */
+      }
+  
+    .image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius : 5px;
+        margin-bottom: auto;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: -210px;
+        padding: 0px;
+    }
+
+    .image img{
+        flex-direction: column;
+        content: url("./images/image-product-mobile.jpg");
+
+    }
+
+     .content {
+      /* width: 100%; */
+      margin-bottom: 20px;
+      padding-top: 370px;
+      padding-right: -280px;
+      left: -90px;
+      /* margin-bottom: 3rem; */
+    }
+
+    .name{
+        margin-top: -120px;
+        position: relative;
+    }
+
+    .heading{
+        padding-top: -180px;
+        margin-bottom: 80px;
+        margin-top: -50%;
+        text-align: left;
+        line-height: 25px;
+        font-size: 23px;
+        max-width: 200px;
+    }
+
+    .para{
+        margin-top: -65px;
+        line-height: 15px;
+    }
+
+    .price{
+        margin-bottom: 2px;
+    }
+    .price2{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 6px; 
+        margin-bottom: 4px;
+        margin-top: -25px
+    }
+
+    .btn{
+        position: relative;
+        top: -23px;
+        height: 40px;
+        width: 250px;
+    }
+
+  }
+  
+  
+   
+  /*
+    .name {
+      padding-bottom: 0;
+    }
+  
+    .heading {
+      margin-bottom: 2rem;
+      margin-top: 0;
+    }
+  
+    .para {
+      margin-top: 0;
+    }
+  
+    .price2 {
+      padding-left: 0;
+      margin-top: 0;
+    } */
+  }
+  
